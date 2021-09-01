@@ -14,11 +14,18 @@ python:
 install:
   - pip install -r requirements.txt
   - pip install codacy-coverage
-script:
-  - cd decide
-  - coverage run --branch --source=. ./manage.py test --keepdb --with-xunit
-  - coverage xml
-  - python-codacy-coverage -r coverage.xml
+jobs:
+  include:
+    script:
+      - cd decide
+      - coverage run --branch --source=. ./manage.py test booth/ --keepdb --with-xunit
+      - coverage xml
+      - python-codacy-coverage -r coverage.xml
+    - script:
+      - cd decide
+      - coverage run --branch --source=. ./manage.py test base/ --keepdb --with-xunit
+      - coverage xml
+      - python-codacy-coverage -r coverage.xml
 
 notifications:
   email:
