@@ -27,14 +27,11 @@ jobs:
       - coverage run --branch --source=. ./manage.py test booth/ --keepdb --with-xunit
       - coverage xml
       - python-codacy-coverage -r coverage.xml
-    - script:
+    script:
       - cd decide
       - coverage run --branch --source=. ./manage.py test base/ --keepdb --with-xunit
       - coverage xml
       - python-codacy-coverage -r coverage.xml
-
-
-
 notifications:
   email:
     recipients:
