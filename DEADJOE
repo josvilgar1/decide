@@ -1,0 +1,37 @@
+
+*** These modified files were found in JOE when it aborted on Tue Aug 31 20:53:13 2021
+*** JOE was aborted by UNIX signal 1
+
+*** File '/home/josele/Escritorio/Septiembre EGC/decide/.git/COMMIT_EDITMSG'
+header
+
+body
+
+
+# Por favor ingresa el mensaje del commit para tus cambios. Las
+#  líneas que comiencen con '#' serán ignoradas, y un mensaje
+#  vacío aborta el commit.
+#
+# En la rama travis
+# Cambios a ser confirmados:
+#	modificado:     README.md
+#
+
+*** File '(Unnamed)'
+/home/josele/Escritorio/Repositorio Decide/decide/.git/COMMIT_EDITMSG
+/home/josele/Escritorio/Repositorio Decide/decide/.git/MERGE_MSG
+/home/josele/Escritorio/Repositorio Decide/decide/.git/MERGE_MSG
+/home/josele/Escritorio/Repositorio Decide/decide/.git/COMMIT_EDITMSG
+/home/josele/Escritorio/Examen practicas/EGC-830-josvilgar1/.git/COMMIT_EDITMSG
+/home/josele/Escritorio/Examen practicas/EGC-830-josvilgar1/.git/MERGE_MSG
+/home/josele/Escritorio/Examen practicas/EGC-830-josvilgar1/.git/MERGE_MSG
+/home/josele/Escritorio/Examen practica bien/EGC-1230-josvilgar1/.git/COMMIT_EDITMSG
+/home/josele/Escritorio/Septiembre EGC/decide/.git/COMMIT_EDITMSG
+/home/josele/Escritorio/Septiembre EGC/decide/.git/COMMIT_EDITMSG
+/home/josele/Escritorio/Septiembre EGC/decide/.git/COMMIT_EDITMSG
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
