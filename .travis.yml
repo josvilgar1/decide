@@ -1,5 +1,8 @@
 dist: xenial
 
+env:
+  - DJANGO_VERSION=2.1.13
+  - DJANGO_VERSION=2.2.6
 services:
   - postgresql
 addons:
@@ -11,7 +14,10 @@ before_script:
 language: python
 python:
   - "3.6"
+  - "2.7"
+  - "3.3"
 install:
+  - pip install -q Django==$DJANGO_VERSION 
   - pip install -r requirements.txt
   - pip install codacy-coverage
 jobs:
@@ -26,6 +32,8 @@ jobs:
       - coverage run --branch --source=. ./manage.py test base/ --keepdb --with-xunit
       - coverage xml
       - python-codacy-coverage -r coverage.xml
+
+
 
 notifications:
   email:
