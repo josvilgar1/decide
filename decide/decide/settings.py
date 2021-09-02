@@ -70,7 +70,7 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'http://localhost:8000'
+BASEURL = 'https://decideapp.herokuapp.com/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -177,6 +177,12 @@ if os.path.exists("config.jsonnet"):
     config = json.loads(evaluate_file("config.jsonnet"))
     for k, v in config.items():
         vars()[k] = v
+
+#Import django Heroku config       
+APIS = {}
+
+import django_heroku
+django_heroku.settings(locals())
 
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES

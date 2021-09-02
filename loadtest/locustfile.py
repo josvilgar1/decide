@@ -58,7 +58,6 @@ class DefVoters(SequentialTaskSet):
             "voting": VOTING
         }), headers=headers)
 
-
     def on_quit(self):
         self.voter = None
 
