@@ -30,3 +30,8 @@ notifications:
       - marllacar1@alum.us.es
     on_success: always
     on_failure: always
+deploy:
+  provider: heroku
+  app: decideapp
+  strategy: git
+  api_key: 86941d48-322b-4f80-a0d1-a38894a35f50
