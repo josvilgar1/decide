@@ -1,8 +1,5 @@
 dist: xenial
 
-env:
-  - DJANGO_VERSION=2.1.13
-  - DJANGO_VERSION=2.2.6
 services:
   - postgresql
 addons:
@@ -17,7 +14,6 @@ python:
   - "2.7"
   - "3.3"
 install:
-  - pip install -q Django==$DJANGO_VERSION 
   - pip install -r requirements.txt
   - pip install codacy-coverage
 
