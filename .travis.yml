@@ -14,8 +14,22 @@ python:
 install:
   - pip install -r requirements.txt
   - pip install codacy-coverage
+
 script:
   - cd decide
-  - coverage run --branch --source=. ./manage.py test --keepdb --with-xunit
+  - coverage run --branch --source=. ./manage.py test booth/ --keepdb --with-xunit
   - coverage xml
   - python-codacy-coverage -r coverage.xml
+
+notifications:
+  email:
+    recipients:
+      - josvilgar1@alum.us.es
+      - marllacar1@alum.us.es
+    on_success: always
+    on_failure: always
+deploy:
+  provider: heroku
+  app: decideapp
+  strategy: git
+  api_key: 86941d48-322b-4f80-a0d1-a38894a35f50
